@@ -74,11 +74,11 @@ ul {
   .header-contact {
     display: flex;
     display: block;
-    margin-left: 330px;
+    margin-left: 305px;
   }
 
   .header-mail {
-    margin-right: 50px;
+    margin-right: 30px;
   }
 
   .header-phone,
@@ -95,6 +95,23 @@ ul {
 .header-phone {
   margin: 0;
 }
+
+.header-mail > .icon-mail {
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-image: url(../images4/envelope.svg);
+}
+
+.header-phone > .icon-phone {
+  display: inline-block;
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images4/smartphone.svg);
+}
+
 
 /* Секція Hero */
 .overlay {
