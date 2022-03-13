@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Modern-normalise -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- посилання на css -->
+    <link href="./css/styles.css" rel="stylesheet" />
+    <style>
+      li {
+        list-style-type: none;
+      }
+    </style>  
+  </head>
+
+  <body>
+    <!-- Хедер -->
+      <header class="header">
+      <div class="container header-container">
+      <a class="header-link" href="WebStudio"><span>Web</span>Studio</a>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="">Студия</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-contact"> 
+      <a class="header-mail" href="mail:info@devstudio.com"
+        >info@devstudio.com</a
+      >
+      <a class="header-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+    </div>
+    </div>
+    </header>
+  
+    <main>
+      <!-- Секція Hero  -->
+      <section class="hero overlay">
+        <div class="conteiner-hero">
+        <h1 class="hero-title">Эффективные решения<br/> для вашего бизнеса</h1>
+        <button class="hero-btn" type="button">Заказать услугу</button>
+      </div>
+      </section>
+      <!-- Переваги роботи -->
+      <section class="advantage">
+        <div class="container">
+          <ul class="advantage-list">
+            <li class="advantage-item">
+              <h3 class="advantage-title">Внимание к деталям</h3>
+              <p class="advantage-descr">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="advantage-item">
+              <h3 class="advantage-title">Пунктуальность</h3>
+              <p class="advantage-descr">
+                Задача организации, в особенности же рамки и место обучения кадров
+                влечет за собой.
+              </p>
+            </li>
+            <li class="advantage-item">
+              <h3 class="advantage-title">Планирование</h3>
+              <p class="advantage-descr">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="advantage-item">
+              <h3 class="advantage-title">Современные технологии</h3>
+              <p class="advantage-descr">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Чим ми займаємось -->
+      <section class="aurwork">
+        <div class="aurwork-container container"> 
+        <h2 class="aurwork-title">Чем мы занимаемся</h2>
+        <ul class="aurwork-list">
+          <li class="aurwork-item">
+            <img class="aurwork-link"
+              src="./images/job/img1_sq.jpg"
+              alt="Фото1"
+              width="370"
+              height="300"
+            />
+          </li>
+          <li class="aurwork-item">
+            <img class="aurwork-link"
+              src="./images/job/img2_sq.jpg"
+              alt="Фото2"
+              width="370"
+              height="300"
+            />
+          </li>
+          <li class="aurwork-item">
+            <img class="aurwork-link"
+              src="./images/job/img3_sq.jpg"
+              alt="Фото3"
+              width="370"
+              height="300"
+            />
+          </li>
+        </ul>
+      </div>
+      </section>
+      <!-- Наша команда -->
+      <section class="team">
+        <div class="team-container container"> 
+        <h2 class="team-title">Наша команда</h2>
+        <ul class="team-list">
+          <li class="team-item">
+            <img class="team-link"
+              src="./images/aurcomand/img1_sq.jpg"
+              alt="Фото работника1"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-name">Игорь Демьяненко</h3>
+            <p class="team-descr" lang="en">Product Designer</p>
+          </li>
+          <li class="team-item container-team">
+            <img class="team-link"
+              src="./images/aurcomand/img2_sq.jpg"
+              alt="Фото работника2"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-name">Ольга Репина</h3>
+            <p class="team-descr" lang="en">Frontend Developer</p>
+          </li>
+          <li class="team-item container-team">
+            <img class="team-link"
+              src="./images/aurcomand/img3_sq.jpg"
+              alt="Фото работника3"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-name">Николай Тарасов</h3>
+            <p class="team-descr" lang="en">Marketing</p>
+          </li>
+          <li class="team-item container-team">
+            <img class="team-link"
+              src="./images/aurcomand/img4_sq.jpg"
+              alt="Фото работника4"
+              width="270"
+              height="260"
+            />
+            <h3 class="team-name">Михаил Ермаков</h3>
+            <p class="team-descr" lang="en">UI Designer</p>
+          </li>
+        </ul>
+      </div>
+      </section>
+    </main>
+    <!-- Футер  -->
+    <footer class="footer">
+      <div class="footer-container container"> 
+      <a class="footer-link" href="WebStudio"><span>Web</span>Studio</a>
+      <address class="footer-address">
+        <ul class="footer-list">
+          <li class="footer-item"><a class="address" href="">г. Киев, пр-т Леси Украинки, 26</a></li>
+          <li class="footer-item">
+            <a class="footer-mail" href="mail:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="footer-item">
+            <a class="footer-phone" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+        </ul>
+      </address>
+    </div>
+    </footer>
+  </body>
+</html>
