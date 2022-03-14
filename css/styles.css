@@ -74,7 +74,7 @@ ul {
   .header-contact {
     display: flex;
     display: block;
-    margin-left: 305px;
+    margin-left: 300px;
   }
 
   .header-mail {
@@ -103,6 +103,11 @@ ul {
   margin-right: 10px;
   background-image: url(../images4/envelope.svg);
 }
+
+.icon-mail:hover, :focus {
+  background-image: url(../images4/envelope\ \(hover\).svg);
+}
+
 
 .header-phone > .icon-phone {
   display: inline-block;
@@ -178,6 +183,32 @@ display: flex;
   width: 270px;
 }
 
+.advantage-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 30px;
+}
+
+.icon-antenna::before {
+background-image: url(../images4/antenna.svg);
+}
+
+.icon-clock::before {
+  background-image: url(../images4/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images4/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images4/astronaut.svg);
+}
+
 .advantage-list .advantage-item + .advantage-item {
   margin-left: 30px;
 }
@@ -226,6 +257,13 @@ flex-direction: column;
 }
 
 /* Секція Наша команда */
+.team-background {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F5F4FA;
+}
+
 .team-container {
 display: flex;
 flex-direction: column;
