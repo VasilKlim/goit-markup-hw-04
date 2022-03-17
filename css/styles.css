@@ -354,14 +354,11 @@ border-color: var(--activ-text-color);
 
 /* Футер */
 .footer {
+display: flex;
 padding-top: 60px;
 padding-bottom: 60px;
 
 background-color: #212121;
-}
-
-.footer-container {
-  background-color: #212121;
 }
 
 .footer-link {
@@ -400,4 +397,51 @@ margin-top: 9px;
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
   }
+
+  /* cоцмережі */
+  .footer-social {
+margin: 12px auto 40px 70px;
+  }
+
+  .footer-title {
+margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
   
+ .footer-social-list {
+   display: flex;
+ }
+
+ .footer-social-item {
+  margin-right: 10px;
+  border-radius: 50%;
+  }
+
+.footer-social-item:last-child {
+  margin-right: 0;
+}
+
+.footer-social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-social-item:hover, :focus {
+color: #FFFFFF;
+border-color: var(--activ-text-color);
+border-color: var(--activ-text-color);
+}
+
+.footer-social-icon {
+  margin: 12px;
+  fill: #ffffff;
+}
