@@ -65,24 +65,26 @@ ul {
   .nav-link:hover,
   .header-mail:hover,
   .header-phone:hover,
+  .contact-icon:hover,
   .nav-link:focus,
   .header-mail:focus,
-  .header-phone:focus {
+  .header-phone:focus,
+  .contact-icon:focus, {
     color: var(--activ-text-color);
   }
   
-  .header-contact {
+  .header-contact .contact-list {
     display: flex;
-    display: block;
-    margin-left: 300px;
-  }
-
-  .header-mail {
-    margin-right: 30px;
+    align-items: center;
+    margin-left: 305px;
   }
 
   .header-phone,
   .header-mail {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
     color: var(--secondery-text-color);
     font-family: Roboto;
     font-weight: 500;
@@ -92,31 +94,15 @@ ul {
     text-decoration: none;
 }
 
-.header-phone {
-  margin: 0;
+.header-contact .contact-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.header-mail > .icon-mail {
-  display: inline-block;
-  width: 16px;
-  height: 12px;
+.header-contact .contact-icon {
   margin-right: 10px;
-  background-image: url(../images4/envelope.svg);
+  
+  color: var(--secondery-text-color);
 }
-
-.icon-mail:hover, :focus {
-  background-image: url(../images4/envelope\ \(hover\).svg);
-}
-
-
-.header-phone > .icon-phone {
-  display: inline-block;
-  width: 10px;
-  height: 16px;
-  margin-right: 10px;
-  background-image: url(../images4/smartphone.svg);
-}
-
 
 /* Секція Hero */
 .overlay {
@@ -168,7 +154,7 @@ text-transform: uppercase;
     border-radius: 4px;
 }
 /* Секція Переваги роботи */
-.advantage, .team {
+.advantage, .team, .client-container {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -243,7 +229,8 @@ flex-direction: column;
 }
 
 .aurwork-title,
-.team-title {
+.team-title,
+.client-title {
     margin-bottom: 50px;
 
     font-weight: bold;
@@ -275,6 +262,8 @@ flex-direction: column;
 
 .team-item {
   margin-right: 30px;
+
+  background-color: #FFFFFF;
   }
 
 .team-item:last-child {
@@ -297,6 +286,64 @@ flex-direction: column;
     line-height: 1.19;
     text-align: center;
 }
+
+.team-social{
+  display: flex;
+
+}
+
+.social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.social-link {
+  margin-right: 10px;
+}
+
+.social-link:last-child {
+  margin-right: 0;
+}
+
+.social-icon:hover, :focus {
+color: var(--activ-text-color);
+}
+
+/* Постійні клієнти */
+.client-list  {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.client-item {
+  width: 170px;
+  height: 92px;
+  margin-right: 30px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.client-item:last-child {
+  margin-right: 0;
+}
+
+.client-icon {
+  margin: 16px 32px;
+  fill: #AFB1B8;
+  
+}
+
+.client-icon:hover, :focus {
+  color: var(--activ-text-color);
+}
+
 /* Футер */
 .footer {
 padding-top: 60px;
