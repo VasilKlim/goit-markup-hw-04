@@ -62,28 +62,27 @@ ul {
     text-decoration: none;
   }
 
-  .nav-link:hover,
-  .header-mail:hover,
-  .header-phone:hover,
-  .contact-icon:hover,
-  .nav-link:focus,
-  .header-mail:focus,
-  .header-phone:focus,
-  .contact-icon:focus, {
+  .nav-link:hover, :focus {
     color: var(--activ-text-color);
   }
   
+  .contact-link:hover, :focus {
+    fill: var(--activ-text-color);
+    color: var(--activ-text-color);
+  }
+
   .header-contact .contact-list {
     display: flex;
     align-items: center;
     margin-left: 305px;
   }
 
-  .header-phone,
-  .header-mail {
+  .contact-link {
     display: flex;
     align-items: center;
     margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
     color: var(--secondery-text-color);
     font-family: Roboto;
@@ -293,11 +292,10 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   }
   
   .footer-social-item:hover, :focus {
-  color: #FFFFFF;
-  border-color: var(--activ-text-color);
-  }
-  
-  .footer-social-icon {
-    margin: 12px;
-    fill: red;
-  }
+    background-color: var(--activ-text-color);
+    }
+    
+    .footer-social-icon {
+      margin: 12px;
+      fill: #FFFFFF;
+    }
