@@ -168,30 +168,12 @@ display: flex;
   width: 270px;
 }
 
-.advantage-item::before {
-  display: block;
-  content: "";
-  height: 120px;
+.advantage-icon {
+  padding: 25px 102px;
   background-color: #F5F4FA;
-  background-repeat: no-repeat;
-  background-position: center;
+  border-radius: 4px;
   margin-bottom: 30px;
-}
-
-.icon-antenna::before {
-background-image: url(../images4/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images4/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images4/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images4/astronaut.svg);
+  ;
 }
 
 .advantage-list .advantage-item + .advantage-item {
