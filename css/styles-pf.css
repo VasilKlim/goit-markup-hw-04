@@ -16,7 +16,7 @@ ul {
 
 /* Header */
 .header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .container {
@@ -62,12 +62,11 @@ ul {
     text-decoration: none;
   }
 
-  .nav-link:hover, :focus {
+  .nav-link:hover {
     color: var(--activ-text-color);
   }
-  
-  .contact-link:hover, :focus {
-    fill: var(--activ-text-color);
+
+  .nav-link:focus {
     color: var(--activ-text-color);
   }
 
@@ -85,6 +84,7 @@ ul {
     padding-bottom: 30px;
 
     color: var(--secondery-text-color);
+    fill: var(--secondery-text-color);
     font-family: Roboto;
     font-weight: 500;
     font-size: 14px;
@@ -97,10 +97,18 @@ ul {
   margin-right: 30px;
 }
 
-.header-contact .contact-icon {
+.contact-link:hover {
+  color: var(--activ-text-color);
+  fill: var(--activ-text-color);
+}
+
+.contact-link:focus {
+  fill: var(--activ-text-color);
+  color: var(--activ-text-color);
+}
+
+.contact-icon {
   margin-right: 10px;
-  
-  color: var(--secondery-text-color);
 }
 
   
@@ -209,11 +217,18 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
 
 /* Футер */
 .footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   
   background-color: #212121;
+  }
+  
+  .footer-div {
+    display: flex;
+  }
+  
+  .footer-container {
+    width: 300px;
   }
   
   .footer-link {
@@ -255,7 +270,7 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
   
     /* cоцмережі */
     .footer-social {
-  margin: 12px auto 40px 70px;
+  margin: 12px auto 40px 0;
     }
   
     .footer-title {
@@ -291,11 +306,15 @@ box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     border-radius: 50%;
   }
   
-  .footer-social-item:hover, :focus {
+  .footer-social-item:hover {
+  background-color: var(--activ-text-color);
+  }
+  
+  .footer-social-item:focus {
     background-color: var(--activ-text-color);
     }
-    
-    .footer-social-icon {
-      margin: 12px;
-      fill: #FFFFFF;
-    }
+  
+  .footer-social-icon {
+    margin: 12px;
+    fill: #FFFFFF;
+  }
