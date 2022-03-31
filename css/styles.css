@@ -118,9 +118,10 @@ ul {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  /* background: #C4C4C4; */
-  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) );
-  background-image: url(../images4/overl.jpg);
+  background: #C4C4C4;
+  background-image: linear-gradient( to right,
+  rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+url(../images4/overl.jpg);
 }
 
 .conteiner-hero {
@@ -236,7 +237,6 @@ flex-direction: column;
 
 /* Секція Наша команда */
 .team-background {
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-color: #F5F4FA;
